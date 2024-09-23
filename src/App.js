@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import Mensagem from './Components/Mensagem/Mensagem';
+import CityList from './Components/CityList/CityList';
+import CityForm from './Components/CityForm/CityForm';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <section className="container">
+      <Mensagem cor="red">
+        Quer conhecer melhor o seu destino? 
+      </Mensagem>
+      <CityList />
+    </section>
+    <section className="contact">
+      <h2>Entre em Contato para mais Informações!</h2>
+      <CityForm />
+    </section>
+    <Footer />
+    </>
   );
 }
 
