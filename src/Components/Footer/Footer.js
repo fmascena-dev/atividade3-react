@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="rodape">
-            <p>Atividade 3 feita por Felipe Mascena em React</p>
+            <p>Atividade 3 feita por <a href="https://github.com/fmascena-dev/atividade3-react">Felipe Mascena</a> em React</p>
         </footer>
     )
 }
